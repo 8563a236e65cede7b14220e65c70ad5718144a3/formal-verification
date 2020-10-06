@@ -1,0 +1,33 @@
+#ifndef SOMENONE_ACSL_INCLUDED
+#define SOMENONE_ACSL_INCLUDED
+
+/*@
+ 	axiomatic SomeNone {
+ 		predicate
+ 		SomeEqual{A}(int* a, integer m, integer n, int v) =
+ 			\exists integer i; m <= i < n && a[i] == v;
+ 			
+ 		predicate
+ 		SomeEqual{A}(int* a, integer n, int v) =
+ 			SomeEqual(a, 0, n, v);
+ 			
+ 		predicate
+ 		NoneEqual (int* a, integer m, integer n, int v) =
+ 			\forall integer i; m <= i < n ==> a[i] != v;
+ 		
+ 		predicate
+ 		NoneEqual (int* a, integer n, int v) =
+ 			NoneEqual (a, 0, n, v);
+ 			
+ 		lemma NotSomeEqual_NoneEqual:
+ 			\forall int* a, v, integer m, n;
+ 				!SomeEqual(a, m, n, v) ==> NoneEqual(a, m, n, v);
+ 				
+ 		lemma NoneEqual_NotSomeEqual:
+ 			\forall int* a, v, integer m, n;
+ 				NoneEqual(a, m, n, v) ==> !SomeEqual(a, m, n, v);
+ 				
+ 	}
+ */
+
+#endif

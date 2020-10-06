@@ -1,4 +1,3 @@
-#include <stdio.h>
 #include "find.h"
 
 unsigned int find(const int* a, unsigned int n, int v){
