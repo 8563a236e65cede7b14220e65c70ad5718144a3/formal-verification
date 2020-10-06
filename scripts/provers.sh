@@ -30,6 +30,10 @@ fi
 	wget https://github.com/CVC4/CVC4/archive/1.7.tar.gz
 	tar -zxvf 1.7.tar.gz
 	
+	# Symfpu
+	wget https://github.com/martin-cs/symfpu/archive/master.zip
+	tar -zxvf master.zip
+	
 	# Z3 Theorem Prover
 	wget https://github.com/Z3Prover/z3/archive/z3-4.8.6.tar.gz
 	tar -zxvf z3-4.8.6.tar.gz
@@ -106,6 +110,13 @@ fi
 		./configure.sh --symfpu --cadical --cryptominisat --lfsc
 		cd build
 		make -j5
+	)
+	
+	# Install Symfpu
+	(
+		cd symfpu-master
+		mkdir /usr/local/include/symfpu
+		cp -r ./* /usr/local/include/symfpu
 	)
 	
 	# Install Why3

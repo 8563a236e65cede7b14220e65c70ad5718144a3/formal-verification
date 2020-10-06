@@ -1,0 +1,35 @@
+[kernel] Parsing find.c (with preprocessing)
+[wp] Running WP plugin...
+[rte] annotating function find
+[wp] 28 goals scheduled
+[wp] [Qed] Goal typed_find_ensures : Valid (5ms)
+[wp] [Qed] Goal typed_find_disjoint_none_some : Valid
+[wp] [Qed] Goal typed_find_complete_none_some : Valid
+[wp] [Qed] Goal typed_find_loop_invariant_2_established : Valid (0.66ms)
+[wp] [Alt-Ergo 2.3.1] Goal typed_find_loop_invariant_preserved : Valid (Qed:4ms) (13ms) (12)
+[wp] [Alt-Ergo 2.3.1] Goal typed_find_loop_invariant_2_preserved : Valid (Qed:8ms) (20ms) (54)
+[wp] [Alt-Ergo 2.3.1] Goal typed_find_loop_invariant_established : Valid (Qed:4ms) (10ms) (22)
+[wp] [Qed] Goal typed_find_assigns_part1 : Valid (0.72ms)
+[wp] [Qed] Goal typed_find_loop_assigns : Valid
+[wp] [Alt-Ergo 2.3.1] Goal typed_find_assert_rte_mem_access : Valid (Qed:3ms) (16ms) (87)
+[wp] [Qed] Goal typed_find_assigns_part4 : Valid (3ms)
+[wp] [Qed] Goal typed_find_assigns_part3 : Valid (4ms)
+[wp] [Qed] Goal typed_find_assigns_part2 : Valid (2ms)
+[wp] [Alt-Ergo 2.3.1] Goal typed_find_assert_rte_unsigned_overflow : Valid (Qed:3ms) (15ms) (46)
+[wp] [Qed] Goal typed_find_none_assigns_part1 : Valid (0.92ms)
+[wp] [Qed] Goal typed_find_loop_variant_positive : Valid (4ms)
+[wp] [Qed] Goal typed_find_loop_variant_decrease : Valid (5ms)
+[wp] [Qed] Goal typed_find_none_assigns_part4 : Valid (2ms)
+[wp] [Qed] Goal typed_find_none_assigns_part3 : Valid (2ms)
+[wp] [Qed] Goal typed_find_none_assigns_part2 : Valid (1ms)
+[wp] [Alt-Ergo 2.3.1] Goal typed_find_none_ensures : Valid (Qed:14ms) (8ms) (40)
+[wp] [Qed] Goal typed_find_some_assigns_part1 : Valid (1ms)
+[wp] [Qed] Goal typed_find_some_assigns_part2 : Valid (4ms)
+[wp] [Alt-Ergo 2.3.1] Goal typed_find_some_ensures_3 : Valid (Qed:15ms) (16ms) (52)
+[wp] [Alt-Ergo 2.3.1] Goal typed_find_some_ensures_2 : Valid (Qed:14ms) (16ms) (46)
+[wp] [Alt-Ergo 2.3.1] Goal typed_find_some_ensures : Valid (Qed:21ms) (14ms) (42)
+[wp] [Qed] Goal typed_find_some_assigns_part4 : Valid (5ms)
+[wp] [Qed] Goal typed_find_some_assigns_part3 : Valid (6ms)
+[wp] Proved goals:   28 / 28
+  Qed:              19  (0.66ms-5ms-21ms)
+  Alt-Ergo 2.3.1:    9  (8ms-20ms) (87)
